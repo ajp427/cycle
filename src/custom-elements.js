@@ -1,6 +1,6 @@
 'use strict';
 let CustomElementWidget = require('./custom-element-widget');
-let Map = Map || require('es6-map'); // eslint-disable-line no-native-reassign
+require("babel/polyfill");
 let CustomElementsRegistry = new Map();
 
 function replaceCustomElementsWithSomething(vtree, toSomethingFn) {
